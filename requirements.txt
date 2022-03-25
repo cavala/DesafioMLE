@@ -1,0 +1,7 @@
+Flask==2.0.3
+flask-restx
+pandas>=0.18.1
+seaborn==0.8.1
+sklearn
+sklearn_pandas
+Werkzeug>=2.0
