@@ -5,14 +5,9 @@ from src.controllers.deck import *
 
 
 class DesafioMLETests(unittest.TestCase):
-    URL = 'http://localhost:5000/getDeckList/ '
-
-    def setUp(self):
-        self.resposta = requests.get(self.URL)
-            
-    def buscar_dados(self):
-        self.assertEqual(200, self.resposta)
-
-    def __init__():
-        self.buscar_dados(self)
-        print (self.assertEqual(200, self.resposta))
+    def test_getCard(self):
+        self.assertEqual(Card.get(self, id=244), 
+                         (200, '[{"id":244,"name":"Aetherfuel Alchemist","mana":6,"attack":4,"health":4,"type":"creature","god":"neutral","strategy":"late"}]')
+                         )
+if __name__ == "__name__":
+    unittest.main()
