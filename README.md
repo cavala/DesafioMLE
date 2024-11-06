@@ -16,14 +16,14 @@ Esboçei a solução(train.py) no Jupiter/Anaconda e depois fui adicionando comp
 
 Build da imagem docker
 
-        docker build --tag python-docker .
+        docker build -t desafio:latest .
         
 
 Instanciando uma imagem
 
-         docker run -t -d -p 5000:5000 python-docker
+         docker run -d -p 8384:8384 desafio 
          
-A api fica exposta em http://localhost:5000/         
+A api fica exposta em http://localhost:8384/         
 
-Os testes unitários ainda não funcionam.
+
 
